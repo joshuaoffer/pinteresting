@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" # creates an about_path (You must use this exact word when creating links from home page)
   get "test" => "pages#test"
